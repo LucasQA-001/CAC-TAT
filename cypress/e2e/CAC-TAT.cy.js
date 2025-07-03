@@ -38,7 +38,7 @@ it('Seleciona Tipo de Atendimento Elogio', () => {
 it('Seleciona Tipo de Atendimento Feedback', () => {
     cy.get('input[type="radio"][value="feedback')
     .check()
-    .should('not.be.checked')
+    .should('be.checked')
 })
 it('exibe mensagem de erro ao enviar formulario com telefone obrigatorio em branco', () => {
     cy.get('input[type="checkbox"][id="phone-checkbox"]')
